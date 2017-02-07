@@ -3,3 +3,11 @@ install:
 - mvn install
 jdk:
 - oraclejdk8
+deploy:
+  provider: heroku
+  api_key:
+    secure: fsU6xSpASRJSlM6U+AR7lv+Rx6moLGoMZ0H1usFY2ERh05Ek+6xflQrgu750i831Y9Hss1hyadYNvdqGxrbWtTHwgWJZBP2aXoIuhWnSRSLmWS7aG9MQBG2zkz6Eq6N3155nnLaPFvXkF6LpOgpRceTsQqF2YQ1Iho30c/Fk2N0EiC0sFE6xEZMHk3SnmguOBwZvKU6G5PGOu0DSpehGit9NlXE3NiGSFT9aqvVBJiuU888zfvJCMbNLtORh4QmmEjHGlBQunklYPhu1PH0vm/oyxN9C0cUQDMAQT83JpL7QOSYw4qLa8FAYhfPhEkQ3TZboEgfnb7MPCx+XARyWFYhQkIC5zayz2k1sEi1cFb2X7hc5cr4WeRfuvTPQbt1h3mCHFOmTQ8rkE5eqTikq8zPloxdUHYmAAIuLShrCEpaYaokUwZ7P99ODxr6489O1UffWsvo7060hQd4ZmbM5EG9eSFFGAHF9KjWP7LLajVGCwVm49SeOIVG5FVcmVntB3ge9PVanCTbrRNwlJqhEIIQpC/Ktjl50n+BSG/KfrAeApOkgkL5l+oy4uHFpMf3U9spolucBYr9sR5tEWomjGpGZIO4SqqxivVNg4mW9KLw7RoxFhvRLqZKXC/HH3GJQr+n6qTUlVk1TrvH3R4em8v9PyaQ/0wj23l5Dx9e6Esg=
+  app: mccormick-addressbook
+  on:
+    repo: Cassie-Mccormick/addressbook
+    branch: todo_tasks
